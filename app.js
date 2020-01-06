@@ -61,14 +61,13 @@ const media = [{
     contributor: '',
     showDetail: false,
   }
-]
+];
 
 const app = new Vue({
   el: '#media-list',
   data: {
     title: 'Treehouse Public Library',
-    mediaList: media,
-    type: ''
+    mediaList: media
   },
   methods: {
 

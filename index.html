@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,28 @@
     <link href="styles.css" rel="stylesheet">
     <title>Hello Vue!</title>
 </head>
+
 <body>
-   
+    <div class="container">
+        <div id="media-list">
+            <h1>{{ title }}</h1>
+            <select>
+                <option>Select a type of media...</option>
+            </select>
+            <ul>
+                <li v-for="media in mediaList">
+                    <h3>{{ media.title }}</h3>
+                    <div>
+                        <p>Media Description</p>
+                        <p class="byLine">By: Media Contributor</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="app.js"></script>
 </body>
+
 </html>

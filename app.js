@@ -68,11 +68,35 @@ const app = new Vue({
   data: {
     title: 'Treehouse Public Library',
     mediaList: media,
-    showDetail: false
+    showDetail: false,
+    type: ''
   },
   methods: {
     toggleDetails: function (media) {
       media.showDetail = !media.showDetail;
+
+    },
+    filterList: function () {
+      this.type = event.target.value;
+    }
+  },
+  computed: {
+    uniqueItemsList: function () {
+      const types = [];
+      // Daniel Solution
+      // for (let media of this.mediaList) {
+      //   if (types.indexOf(media.type) < 0) {
+      //     types.push(media.type);
+      //   }
+      // }
+      // Course solution - A bit more readable
+      this.mediaList.forEach((media) => {
+        if (!types.includes(media.type)) {
+          types.push(media.type);
+        }
+      });
+
+      return types;
     }
   }
 });

@@ -2,15 +2,15 @@ body {
     font-family: 'Open Sans', sans-serif;
     background: #f4f4f4;
 }
-  
+
 .container {
-    max-width: 80%; 
+    max-width: 80%;
     margin: auto;
     min-height: initial;
     position: relative;
 }
-  
-.container > div {
+
+.container>div {
     padding-bottom: 30px;
 }
 
@@ -58,9 +58,9 @@ li {
     border-left: #95effe solid 5px;
     position: relative;
     background: #fff;
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
-    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 
 li.book {
@@ -69,6 +69,10 @@ li.book {
 
 li.streaming {
     border-left: #a0f2d0 solid 5px;
+}
+
+li.e-book {
+    border-left: orange solid 5px;
 }
 
 .byline {
@@ -99,4 +103,3 @@ select {
     width: 300px;
     outline: none;
 }
-  
